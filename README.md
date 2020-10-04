@@ -8,11 +8,7 @@ This is the open source toolkit for the ISBI 2020 paper titled [Visualisation of
 
 
 The paper performs the following tasks:
-* Develops a novel end-to-end unsupervised fusion algorithm for anatomical and functional imaging modalities using Convolutional Neural Networks.
-* Develops a mathematical framework to visualise the fused image using the partial derivatives with respect to the input imaging modalities.
-* Compares the proposed fusion + visualisation method with other state-of-the-art fusion methods.
 
-**Note**: Please cite the paper if you are using this code in your research.
 
 ## Prerequisites
 * MATLAB
