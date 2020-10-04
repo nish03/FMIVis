@@ -22,7 +22,7 @@ The paper performs the following tasks:
 
 
 ## Evaluation metrics
-As mentioned in the paper, we quantitatively evaluated the quality of our end-to-end unsupervised learning based medical image fusion method with some popular fusion metrics using MATLAB. The code of the fusion metrics used has been provided in the folder 'Fusion metrics' in this repository. The author and citation details of each of these metrics are given in the comment section of the code. If you use these fusion metrics for evaluation of your own fusion method, we recommend you to properly cite the original contribution. For running these metrics, you need two grayscale input images and a grayscale fused image. For getting the metric scores all at once, you need to run fusionAssess.m file.
+
 
 ## Evaluated fusion methods
-As mentioned in the paper, we used several existing fusion methods and compared their metric scores with those obtained from FunFuseAn. The code for the evaluated fusion methods are publicly available. In case of any questions related to these fusion methods, please contact the corresponding authors.   
+ 
