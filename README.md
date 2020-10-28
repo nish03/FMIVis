@@ -6,13 +6,11 @@ This is the open source toolkit for the ISBI 2020 paper titled [Visualisation of
 * [A non-reference image fusion metric based on mutual information of image features](http://dx.doi.org/10.1016/j.compeleceng.2011.07.012)
 * [Visualisation of Medical Image Fusion and Translation for Accurate Diagnosis of High Grade Gliomas](https://ieeexplore.ieee.org/document/9098504)
 
-
 ![GitHub Logo](/docs/FMIVis.png)
-
 
 The paper performs the following tasks:
 * The paper spatially computes feature mutual information (FMI) metric scores between corresponding pixels of two grayscale images. 
-* The paper apply the FMI metric for the visualisation of image fusion and image translation algorithms. For image fusion methods, the FMI heat maps are computed between the input image and the fused image. For image translation methods, the FMI heat maps are computed between the input image and the translated image.
+* The paper apply the FMI metric to visualise the mutual information between the local features of an image pair obtained using image fusion and image translation algorithms. For image fusion methods, the FMI heat maps are computed between the input image and the fused image. For image translation methods, the FMI heat maps are computed between the input image and the translated image.
 
 ## Prerequisites
 * MATLAB
