@@ -12,7 +12,6 @@ This is the open source toolkit for the ISBI 2020 paper titled [Visualisation of
 
 The paper performs the following tasks:
 
-
 ## Prerequisites
 * MATLAB
 
