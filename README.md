@@ -7,7 +7,7 @@ This is the open source toolkit for the ISBI 2020 paper titled [Visualisation of
 * [Visualisation of Medical Image Fusion and Translation for Accurate Diagnosis of High Grade Gliomas](https://ieeexplore.ieee.org/document/9098504)
 
 
-![GitHub Logo](/docs/Picture24.pdf)
+![GitHub Logo](/docs/FMIVis.png)
 
 
 The paper performs the following tasks:
@@ -17,6 +17,8 @@ The paper performs the following tasks:
 * MATLAB
 
 ## Results
+![GitHub Logo](/docs/Results.png)
+
 
 ## Data
 
