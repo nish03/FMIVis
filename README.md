@@ -31,9 +31,11 @@ The images for evaluating our method were acquired from [Harvard Whole Brain Atl
 
 -  You can visualize the RGB image where the FMI heat maps between input images and the fused image is in the first two red and green channels and the fused image itself in the blue channel as shown in the following code snippet:
    
-   ``` rgb_image(:,:,1)  = input1_heat
-       rgb_image(:,:,2)  = input2_heat
-       rgb_image(:,:,3)  = fused 
+   ```
+   rgb_image(:,:,1)  = input1_heat
+   rgb_image(:,:,2)  = input2_heat
+   rgb_image(:,:,3)  = fused 
+   
    ```
 
 2. For obtaining FMI heat maps in an image translation setup, you should have two equally sized grayscale images with one from input image modality and another from target image modality while the third image should be the predicted target image from one of the image translation methods. 
@@ -42,9 +44,11 @@ The images for evaluating our method were acquired from [Harvard Whole Brain Atl
 
 -  To visualize the RGB image where the FMI heat map between input image and the predicted target image is in the red channel, heat map between groundtruth target image and the predicted target image is in the green channel while the predicted target image is in the blue channel as shown in the following code snippet:
 
-   ``` rgb_image(:,:,1)  = th.*input_heat + (1-th).* double(predicted_target)
-       rgb_image(:,:,2)  = th.*input_heat + (1-th).* double(input)
-       rgb_image(:,:,3)  = predicted_target
+   ```
+   rgb_image(:,:,1)  = th.*input_heat + (1-th).* double(predicted_target)
+   rgb_image(:,:,2)  = th.*input_heat + (1-th).* double(input)
+   rgb_image(:,:,3)  = predicted_target
+   
    ```
 
 
