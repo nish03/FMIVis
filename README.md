@@ -15,6 +15,7 @@ The paper performs the following tasks:
 ## Prerequisites
 * MATLAB
 
+
 ## Results
 ![GitHub Logo](/docs/Results.png)
 
@@ -22,7 +23,29 @@ The paper performs the following tasks:
 The images for evaluating our method were acquired from [Harvard Whole Brain Atlas](http://www.med.harvard.edu/AANLIB/) which is publicly available. Please note our method is adaptable to any kind of grayscale image pair with same dimension.
 
 ## Usage
+1. For obtaining FMI heat maps in a fusion setup, you should have two equally sized grayscale input images and an output grayscale fused image. 
+ 
+-  To compute heat maps for a particular image fusion method, you need to run: ```  [input1_heat, input2_heat] = fmi(input1, input2, fused, feature, window_size) ``` in ** evaluate_fusion_rpcnn.m ** file where feature define the type of feature extraction
+   that needs to be performed on the input image. If no feature extraction is required, then the default is 'none'. window_size is the patch dimension within which
+   the mutual information between the input patch and the fused patch needs to be estimated.
 
+-  You can visualize the RGB image where the FMI heat maps between input images and the fused image is in the first two red and green channels and the fused image itself in the blue channel as shown in the following code snippet:
+   
+   ``` rgb_image(:,:,1)  = input1_heat
+       rgb_image(:,:,2)  = input2_heat
+       rgb_image(:,:,3)  = fused 
+   ```
+
+2. For obtaining FMI heat maps in an image translation setup, you should have two equally sized grayscale images with one from input image modality and another from target image modality while the third image should be the predicted target image from one of the image translation methods. 
+
+-  To compute heat maps for a particular image translation method, you need to run: ``` [input_heat, target_heat] = fmi(input, target, predicted_target,  feature, window_size); ``` in ** evaluate_translation_tumor.m ** file where 'input' is the input image, 'target' is the groundtruth image for the target and 'predicted_target' is the image obtained from a particular image translation method.
+
+-  To visualize the RGB image where the FMI heat map between input image and the predicted target image is in the red channel, heat map between groundtruth target image and the predicted target image is in the green channel while the predicted target image is in the blue channel as shown in the following code snippet:
+
+   ``` rgb_image(:,:,1)  = th.*input_heat + (1-th).* double(predicted_target)
+       rgb_image(:,:,2)  = th.*input_heat + (1-th).* double(input)
+       rgb_image(:,:,3)  = predicted_target
+   ```
 
 
 ## Evaluated fusion methods
