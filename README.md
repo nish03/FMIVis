@@ -43,7 +43,7 @@ The images for evaluating our method were acquired from [Harvard Whole Brain Atl
 
    ```
    rgb_image(:,:,1)  = th.*input_heat + (1-th).* double(predicted_target)
-   rgb_image(:,:,2)  = th.*input_heat + (1-th).* double(input)
+   rgb_image(:,:,2)  = th.*target_heat + (1-th).* double(predicted_target)
    rgb_image(:,:,3)  = predicted_target
    ```
 
