@@ -13,7 +13,7 @@ The paper performs the following tasks:
 * The paper apply the FMI metric to visualise the mutual information between the local features of an image pair obtained using image fusion and image translation algorithms. For image fusion methods, the FMI heat maps are computed between the input image and the fused image. For image translation methods, the FMI heat maps are computed between the input image and the translated image.
 
 ## Prerequisites
-* MATLAB
+* MATLAB R2022b version with Image Processing toolbox installed
 
 
 ## Results
