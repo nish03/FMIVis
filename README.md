@@ -37,7 +37,7 @@ The images for evaluating our method were acquired from [Harvard Whole Brain Atl
    ```
 
 2. For obtaining FMI heat maps in an image translation setup, you should have two equally sized grayscale images with one from input image modality and another from target image modality while the third image should be the predicted target image from one of the image translation methods. 
-   -  To compute heat maps for a particular image translation method, you need to run: ``` [input_heat, target_heat] = fmi(input, target, predicted_target,  feature, window_size); ``` in **evaluate_translation_tumor.m** file where 'input' is the input image, 'target' is the groundtruth image for the target and 'predicted_target' is the image obtained from a particular image translation method.
+   -  To compute heat maps for a particular image translation method, you need to run: ``` [input_heat, target_heat] = fmi(input, target, predicted_target,  'none', window_size); ``` in **evaluate_translation_tumor.m** file where 'input' is the input image, 'target' is the groundtruth image for the target and 'predicted_target' is the image obtained from a particular image translation method.
 
    -  To visualize the RGB image where the FMI heat map between input image and the predicted target image is in the red channel, heat map between groundtruth target image and the predicted target image is in the green channel while the predicted target image is in the blue channel as shown in the following code snippet:
 
