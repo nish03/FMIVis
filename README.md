@@ -20,7 +20,7 @@ The paper performs the following tasks:
 ![GitHub Logo](/docs/Results.png)
 
 ## Data
-The images for evaluating our method were acquired from [Harvard Whole Brain Atlas](http://www.med.harvard.edu/AANLIB/) which is publicly available. Please note our method is adaptable to any kind of grayscale image pair with same dimension.
+The images for evaluating our method were acquired from [Harvard Whole Brain Atlas](http://www.med.harvard.edu/AANLIB/) which is publicly available. Please note our method is adaptable to any kind of grayscale image pair with same dimension. In case you need the data using which we got results shown in the paper, please send me an email at nishant.kumar@tu-dresden.de
 
 ## Usage
 1. For obtaining FMI heat maps in a fusion setup, you should have two equally sized grayscale input images and an output grayscale fused image. 
