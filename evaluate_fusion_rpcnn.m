@@ -1,5 +1,5 @@
-mri_nsct_rpcnn1 = imread('Images/MRI/1.png');
-pet_nsct_rpcnn1 = imread('Images/PET/1.png');
+mri_nsct_rpcnn1 = imread('Images/MRI.png');
+pet_nsct_rpcnn1 = imread('Images/PET.png');
 fused_nsct_rpcnn1 = imread('Images/Results/fuse_nsct_rpcnn1.png');
 [mri_map_nsct_rpcnn1, pet_map_nsct_rpcnn1] = fmi(mri_nsct_rpcnn1, pet_nsct_rpcnn1, fused_nsct_rpcnn1);
 imshow(mri_map_nsct_rpcnn1);
