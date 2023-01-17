@@ -24,7 +24,7 @@ The images for evaluating our method were acquired from [Harvard Whole Brain Atl
 
 ## Usage
 1. For obtaining FMI heat maps in a fusion setup, you should have two equally sized grayscale input images and an output grayscale fused image. 
-   -  To compute heat maps for a particular image fusion method, you need to run: ```  [input1_heat, input2_heat] = fmi(input1, input2, fused, feature, window_size) ``` in **evaluate_fusion_rpcnn.m** file where feature define the type of feature extraction
+   -  To compute heat maps for a particular image fusion method, you need to run: ```  [input1_heat, input2_heat] = fmi(input1, input2, fused, 'none', window_size) ``` in **evaluate_fusion.m** file where feature define the type of feature extraction
    that needs to be performed on the input image. If no feature extraction is required, then the default is 'none'. window_size is the patch dimension within which
    the mutual information between the input patch and the fused patch needs to be estimated.
 
