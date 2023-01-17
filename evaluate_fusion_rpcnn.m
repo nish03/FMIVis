@@ -18,4 +18,4 @@ fused_rgb = zeros(250,250,3,'uint8');
 fused_rgb(:,:,1)  =  floor((th .* mri_map + (1-th)).* double(fused(6:255,6:255)));
 fused_rgb(:,:,2)  = floor((th .* pet_map + (1-th)).* double(fused(6:255,6:255)));
 fused_rgb(:,:,3)  = fused(6:255,6:255);
-imshow(fused_rgb);
+imshow(fused_rgb); 
