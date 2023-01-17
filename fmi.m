@@ -29,7 +29,7 @@ imf = double(imf);
 
 switch feature
     
-    case 'none'         % Raw pixels (no feature extraction)              
+	case 'none'         % Raw pixels (no feature extraction)              
         aFeature = ima;
         bFeature = imb;
         fFeature = imf;
@@ -67,8 +67,7 @@ end
 
 [m,n] = size(aFeature);
 w = floor(w/2);
-mri_map = ones(m-2*w, n-2*w);
-pet_map = ones(m-2*w, n-2*w);
+fmi_map = ones(m-2*w, n-2*w);
 
 for p = w+1:m-w
     for q = w+1:n-w
@@ -104,7 +103,6 @@ for p = w+1:m-w
             
             % PDF to CDF tranformation
             aCdf = zeros(size(aPdf));
-            imshow(aCdf);
             fCdf = zeros(size(fPdf));
             aCdf(1) = aPdf(1);
             fCdf(1) = fPdf(1);
@@ -453,7 +451,6 @@ for p = w+1:m-w
         
         mri_map(p-w,q-w) = fmi_af;
         pet_map(p-w,q-w) = fmi_bf;
-        
         
     end
 end
